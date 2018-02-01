@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="Abdul Rehman" />
+	<title>Dua App</title>
+    <link href="css/bootstrap.min.css"  rel="stylesheet"/>
+    <link href="css/dashboard.css"  rel="stylesheet"/>
+    <link href="css/style.css"  rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="main"></div>
+     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand text-success" href="#">Dua App </a>
+      <p class="float-right text-white"><small>By Abdul Rehman</small></p>
+    </nav>
+    
+    <div id="login">
+      <h2>Login</h2>
+      <form onsubmit="login();" action="duaAppIndex.html">
+      <label>Email: <input type="email" id="uemail-lgin" required="required"/></label>
+      <label>Pass: <input type="password" id="upass-lgin" required="required"/></label>
+      <input type="submit" value="login" />
+      </form>
+      <a href="JavaScript:void(0)" onclick="switchOpt(1)">Click here to Signup</a>
+    </div>
+    <div id="signup" style="display: none;">
+      <h2>Signup</h2>
+      <form onsubmit="signup();">
+        <label>Name: <input type="text" id="uname-sgnup" required="required" /> (required)</label>
+        <label>Email: <input type="email" id="uemail-sgnup" required="required"/> (required)</label>
+        <label>Pass: <input type="password" id="upass-sgnup" required="required"/> (required)</label>
+        <label>Phone: <input type="text" id="uphone-sgnup" /> (optional)</label>
+        <input type="submit" value="signup"/>
+      </form>
+      <a href="JavaScript:void(0)" onclick="switchOpt(0)">Click here to Login</a>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
